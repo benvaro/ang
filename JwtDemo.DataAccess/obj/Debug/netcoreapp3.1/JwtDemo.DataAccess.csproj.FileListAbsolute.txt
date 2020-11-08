@@ -1,0 +1,5 @@
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DataAccess\bin\Debug\netcoreapp3.1\JwtDemo.DataAccess.deps.json
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DataAccess\bin\Debug\netcoreapp3.1\JwtDemo.DataAccess.dll
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DataAccess\obj\Debug\netcoreapp3.1\JwtDemo.DataAccess.csprojAssemblyReference.cache
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DataAccess\obj\Debug\netcoreapp3.1\JwtDemo.DataAccess.AssemblyInfoInputs.cache
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DataAccess\obj\Debug\netcoreapp3.1\JwtDemo.DataAccess.AssemblyInfo.cs
