@@ -1,0 +1,9 @@
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DTO\bin\Debug\netcoreapp3.1\JwtDemo.DTO.deps.json
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DTO\bin\Debug\netcoreapp3.1\JwtDemo.DTO.dll
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DTO\bin\Debug\netcoreapp3.1\JwtDemo.DTO.pdb
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DTO\obj\Debug\netcoreapp3.1\JwtDemo.DTO.csprojAssemblyReference.cache
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DTO\obj\Debug\netcoreapp3.1\JwtDemo.DTO.AssemblyInfoInputs.cache
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DTO\obj\Debug\netcoreapp3.1\JwtDemo.DTO.AssemblyInfo.cs
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DTO\obj\Debug\netcoreapp3.1\JwtDemo.DTO.csproj.CoreCompileInputs.cache
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DTO\obj\Debug\netcoreapp3.1\JwtDemo.DTO.dll
+C:\Users\benva\source\repos\JwtDemo\JwtDemo.DTO\obj\Debug\netcoreapp3.1\JwtDemo.DTO.pdb
