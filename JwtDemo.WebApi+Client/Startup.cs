@@ -1,5 +1,8 @@
 using JwtDemo.DataAccess;
 using JwtDemo.DataAccess.Entities;
+using JwtDemo.Domain.Abstraction;
+using JwtDemo.Domain.Implementation;
+using JwtDemo.WebApi_Client.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -39,9 +42,15 @@ namespace JwtDemo.WebApi_Client
             {
                 opt.Password.RequireDigit = true;
                 opt.Password.RequiredLength = 6;
+                opt.Password.RequireLowercase = false;
+                opt.Password.RequireNonAlphanumeric = false;
+                opt.Password.RequireUppercase = false;
                 // configurate password
             });
 
+
+            services.AddTransient<IJWTTokenService, JWTTokenService>();
+           
             var signInKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["SecretPhrase"]));
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(
@@ -128,6 +137,8 @@ namespace JwtDemo.WebApi_Client
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });
+
+         //  CustomInitializerDatabase.InitializeDatabase(app.ApplicationServices, env, Configuration);
         }
     }
 }

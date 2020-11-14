@@ -41,7 +41,7 @@ namespace JwtDemo.Domain.Implementation
             var jwtTokenSecretKey = _configuration.GetValue<string>("SecretPhrase");
 
             var signInKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtTokenSecretKey));
-            var signInCredentials = new SigningCredentials(signInKey, SecurityAlgorithms.RsaSha256);
+            var signInCredentials = new SigningCredentials(signInKey, SecurityAlgorithms.HmacSha256);
 
             var jwt = new JwtSecurityToken(signingCredentials: signInCredentials, claims: claims, expires: DateTime.Now.AddDays(3));
 
