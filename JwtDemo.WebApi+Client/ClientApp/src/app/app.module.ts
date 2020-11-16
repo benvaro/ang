@@ -13,7 +13,20 @@ import { SignInComponent } from "./sign-in/sign-in.component";
 import { SignUpComponent } from "./sign-up/sign-up.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { NgxSpinnerModule, NgxSpinnerService } from "ngx-spinner";
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NotifierModule, NotifierOptions } from "angular-notifier";
+import { TokenInterceptor } from "./interseptor";
+
+const config: NotifierOptions = {
+  position: {
+    horizontal: {
+      position: "right",
+    },
+    vertical: {
+      position: "top",
+    },
+  },
+};
 
 @NgModule({
   declarations: [
@@ -31,9 +44,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     FormsModule,
     AppRoutingModule,
     NgxSpinnerModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NotifierModule.withConfig(config),
   ],
-  providers: [NgxSpinnerService],
+  providers: [
+    NgxSpinnerService,
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
